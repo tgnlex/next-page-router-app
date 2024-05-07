@@ -1,8 +1,17 @@
-type Likes = {
-  likes: number;
+type ResMsg = {
+  message: string;
+  status?: number;
 }
+type ResData = {
+  data: string;
+}
+type Query = {
+  id?: string;
+  name?: string;
+}
+
 type ErrorType = {
   message: String,
   statusCode: number;
 }
-export type {Likes, ErrorType}
+export type {ErrorType, Query, ResData, ResMsg}

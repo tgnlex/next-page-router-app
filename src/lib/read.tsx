@@ -10,4 +10,10 @@ function read( path: string) {
   return data; 
 }
 
-export {read};
+async function parseRead(url: string) {
+  let raw = read(url);
+  let data = JSON.parse(raw);
+  return data;
+}
+
+export {read, parseRead};
