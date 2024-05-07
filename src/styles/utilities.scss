@@ -1,0 +1,25 @@
+a, .link {
+  text-decoration: none;
+  padding: 0.2rem;
+  margin: 0px;
+}
+.list {
+  list-style-type: none;
+  text-decoration: underline;
+}
+.logo {
+  position: relative;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.center {
+  place-items: center;
+  place-content: center;
+}
+
