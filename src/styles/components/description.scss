@@ -1,25 +1,27 @@
+@import 'lib';
+
 .description {
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
-  font-size: $desc-size;
+  font-size: $desc-font-size;
   width: 100%;
   z-index: 2;
   font-family: $desc-font;
   &--text {
-    @extend description;
+    @extend .description;
     position: relative;
     margin: 0;
     padding: 1rem;
-    background-color: $desc-text-bg;
+    color: $desc-text-bg;
     border: 1px solid $desc-text-border;
     border-radius: $desc-text-radius;
   }
   &--link {
-    @extend description;
+    @extend .description;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: $desc-link-gap;
   }
 }

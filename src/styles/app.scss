@@ -6,12 +6,8 @@
 @use 'sass:list';
 @use 'sass:selector';
 @use 'sass:map';
-/* Libs */
-@use 'lib/colors';
-@use 'lib/variables';
-@use 'lib/frames';
-/* Stylesheets */ 
+
+/* Stylesheets */
 @use 'base';
-@use 'frames';
-@use 'utilities';
 @use 'components';
+@use 'utilities';

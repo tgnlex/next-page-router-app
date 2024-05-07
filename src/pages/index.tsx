@@ -1,16 +1,16 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import {Meta} from '../components/Meta';
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+import {Navbar} from '../components/Navbar';
+ function Home() {
   return (
-    <>
+    <div className="container--row wrapper">
       <Head><Meta title={'Home'} description={"Root landing page"} keywords={"Landing, Home, Index"} /></Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <h1>Hello World!</h1>
+      <Navbar />
+      <main id="home" className="container--col">
+        <h1 className="heading">Hello World!</h1>
+        <h2 className="error--warning">Error</h2>
       </main>
-    </>
+    </div>
   );
 }
+export default Home;

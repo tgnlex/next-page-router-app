@@ -14,5 +14,4 @@ Error.getInitialProps = ({ res, error }: {res: Response, error: ErrorType}) => {
   return {statusCode}
 };
 
-export {Error};
-export type {ErrorType};
+export default Error;
