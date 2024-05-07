@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "first test", 
+    "content": "Hello World!",
+    "media": null,
+    "likes": 0
+  },
+  {
+    "id": 2,
+    "title": "second test",
+    "content": "Hello Again!",
+    "media": null, 
+    "likes": 0
+  }
+]
